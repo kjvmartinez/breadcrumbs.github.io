@@ -37,7 +37,7 @@
         </div>
         <article>
             <h2>HTML Introduction</h2>
-            <h4>Learning Objectives</h4>
+            <h4>Learning Outcomes</h4>
             <ol>
                 <li>Understand the basic structure of an HTML document, including the &lt;!DOCTYPE&gt;, &lt;html&gt;, &lt;head&gt;, and &lt;body&gt; elements.</li>
                 <li>Create paragraphs using the &lt;p&gt; tag and apply different levels of headings using &lt;h1&gt; to &lt;h6&gt; tags.</li>
@@ -49,12 +49,11 @@
 
             <!-- HTML brief introduction -->
             <p>
-                HTML stands for HypterText Markup Language. HypterText defines the links betweet web pages. Markup language is used to define
-                the text within the tag which define the structure of web pages.
+                HTML stands for HyperText Markup Language. HypterText defines the links between web pages. Markup language is used to define the text within the tag, which defines the structure of web pages.
             </p>
 
             <p>
-                HTML is a markup language used by the browser to manipulate text, images, and other content, in order to display it in the required format. 
+                HTML is a markup language used by the browser to manipulate text, images, and other content in order to display it in the required format. 
                 HTML was created by Tim Berners-Lee in 1991. The first-ever version of HTML was HTML 1.0, but the first standard version was HTML 2.0, published in 1995.
             </p>
 
@@ -63,16 +62,109 @@
                 If ommitted the browser will apply the opening tag until the end of page.
             </p>
 
+            <h5>Tags and Elements</h5>
+            <img src="../img/tagelement.png" alt="tag-element">
 
+            <h5>HTML Basic Structure</h5>
             
-    <pre class="code-block"><code>
-    &lt;h1&gt; Hello, World. &lt;/h1&gt;
-    </code></pre>
+<pre class="code-block"><code>
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+        &lt;head&gt;
+            &lt;title&gt;About&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;h2&gt; History &lt;/h2&gt;
+            &lt;p&gt; It started as a weekend project... &lt;/p&gt;
+        &lt;/body&gt;
+    &lt;/html&gt;
+</code></pre>
 
-            <p>
-                In the sample code above h1 are 
-            </p>
-        </article>
+    <h5>Output of the code above: </h5>
+    <img src="../img/output01.png" alt="tag-element">
+
+        <p>Here's a list of the HTML tags used in the code above.</p>
+
+        <ul>
+            <li><b>&lt;!DOCTYPE html&gt;:</b> Specifies the document type and version of HTML being used.</li>
+            <li><b>&lt;html&gt;:</b> The root element that wraps around the entire HTML document.</li>
+            <li><b>&lt;head&gt;:</b> Contains meta-information about the document, like character encoding and linked resources.</li>
+            <li><b>&lt;title&gt;:</b> Sets the title of the web page, which appears in the browser's title bar or tab.</li>
+            <li><b>&lt;body&gt;:</b> Contains the visible content of the web page.</li>
+            <li><b>&lt;h2&gt;:</b> Headings, used to define different levels of headings for sections.</li>
+            <li><b>&lt;p&gt;:</b> Represents a paragraph of text.</li>
+        </ul>
+
+        <h5>Activity 01:</h5>
+        <ol>
+            <li>Identify the different tags used in cozycup-boilerplate at this link: https://github.com/CC6-Pancake/cozycup-cafe-boilerplate</li>
+            <li>Create an educational webpage about your favorite book or movie.
+                <ul>
+                    <li>Open a text editor and create a new HTML file (e.g., favorite.html).</li>
+                    <li>Set up the basic HTML document structure with the doctype, html, head, and body elements.</li>
+                    <li>Add a title that describes your webpage's content.</li>
+                    <li>Create a heading (level 1) that introduces your favorite book or movie.</li>
+                    <li>Write a short paragraph to provide a brief overview of the story.</li>
+                    <li>Add another heading (level 2) for a section about the main characters.</li>
+                    <li>Write a paragraph for each main character.</li>
+                    <li>Continue organizing your content with additional headings and paragraphs to cover various aspects like the plot, setting, and your personal thoughts.</li>
+                    <li>Apply different levels of headings (&lt;h3&gt;, &lt;h4&gt;, etc.) to introduce subsections within each main section.</li>
+                </ul>
+            </li>
+            
+        </ol>
+
+        <h5>Anchor Tag &lt;a&gt;</h5>
+        <p>
+            The &lt;a&gt; tag in HTML is the anchor tag, commonly known as the hyperlink tag. It's used to create hyperlinks that link to other web pages, files, or resources, both within the same website and to external websites. 
+                The &lt;a&gt; tag is one of the fundamental elements of HTML for creating navigation and connecting different web pages together.
+        </p>
+
+        <p>The basic syntax of the &lt;a&gt; tag is as follows:</p>
+<pre class="code-block"><code>
+    &lt;a href="URL"&gt;Link Text&lt;/a&gt;
+</code></pre>
+
+        <ul>
+            <li><b>href:</b> This attribute specifies the URL (Uniform Resource Locator) to which the link points. It can be an absolute URL (e.g., https://www.example.com) or a relative URL (e.g., about.html).</li>
+            <li><b>Link Text:</b> This is the text that is displayed on the webpage for the user to click on.</li>
+        </ul>
+
+        <p>You can use the &lt;a&gt; tag to create internal links that direct users to specific sections within the same page by utilizing the href="#section-id" syntax.</p>
+<pre class="code-block"><code>
+    &lt;a href="#section-about">Jump to About Section&lt;/a&gt;
+    ...
+    &lt;section id="section-about"&gt;
+        &lt;h2>About Us&lt;/h2&gt;
+        &lt;p>This is information about our organization...&lt;/p&gt;
+    &lt;/section&gt;
+
+</code></pre>        
+
+<p>Different types of Hyperlinks</p>
+<pre class="code-block"><code>
+    &lt;!-- External Website Link --&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.example.com&quot;&gt;Visit Example.com&lt;/a&gt;&lt;/p&gt;
+    
+    &lt;!-- Internal Page Link --&gt;
+    &lt;p&gt;&lt;a href=&quot;about.html&quot;&gt;Learn About Us&lt;/a&gt;&lt;/p&gt;
+    
+    &lt;!-- Email Link --&gt;
+    &lt;p&gt;&lt;a href=&quot;mailto:info@example.com&quot;&gt;Contact Us&lt;/a&gt;&lt;/p&gt;
+    
+    &lt;!-- Downloadable File Link --&gt;
+    &lt;p&gt;&lt;a href=&quot;documents/sample.pdf&quot; download&gt;Download PDF&lt;/a&gt;&lt;/p&gt;
+</code></pre>
+    
+<h5>Activity 02:</h5>
+<ul>
+    <li>What are the different internal links that are used in cozycup-boilerplate? </li>
+    <li></li>
+    <li></li>
+</ul>
+    
+    
+    </article>
     </main>
     <footer>
         <div class="footer-links">
