@@ -82,7 +82,9 @@ hr {
 
 
 article {
-    padding: 20px;
+    width: 100%;
+    padding: 10px;
+    
     flex: 1;
 }
 
