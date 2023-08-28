@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="../css/style.css">
     <title>Your Documentation</title>
 </head>
@@ -30,7 +31,7 @@
     <main>
         <div class="sidebar">
             <ul>
-                <li><a href="learningmodules/introhtml.html">HTML</a></li>
+                <li><a href="learningmodules/introhtml.html">HTML Introduction</a></li>
                 <li><a href="#">Post 2</a></li>
                 <li><a href="#">Post 3</a></li>
             </ul>
@@ -156,24 +157,139 @@
     &lt;p&gt;&lt;a href=&quot;documents/sample.pdf&quot; download&gt;Download PDF&lt;/a&gt;&lt;/p&gt;
 </code></pre>
     
-<h5>Activity 02:</h5>
-<ul>
-    <li>What are the different internal links that are used in cozycup-boilerplate? </li>
-    <li></li>
-    <li></li>
-</ul>
+        <h5>Activity 02:</h5>
+        <ul>
+            <li>What are the different internal links that are used in cozycup-boilerplate? </li>
+            <li>Create a footer and provide a link to your email, Facebook, and GitHub account.</li>
+        </ul>
     
-    
+        <h5>Unordered list &lt;ul&gt; &lt;/ul&gt; </h5>
+
+        <p>
+            An unordered list is a list of items where each item is preceded by a bullet point. 
+            You can create an unordered list using the &lt;ul&gt; element and list item &lt;li&gt; elements.
+        </p>
+<pre class="code-block"><code>
+    &lt;ul&gt;
+        &lt;li&gt;Item 1&lt;/li&gt;
+        &lt;li&gt;Item 2&lt;/li&gt;
+        &lt;li&gt;Item 3&lt;/li&gt;
+    &lt;/ul&gt;
+</code></pre>
+
+        <p>Output of the code above: </p>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+        <h5>Ordered list &lt;ol&gt; &lt;/ol&gt;</h5>
+        <p>
+            An ordered list is a list of items where each item is preceded by a number or letter. 
+            You can create an ordered list using the &lt;ol&gt; element and list item &lt;li&gt; elements.
+        </p>
+<pre class="code-block"><code>
+    &lt;ol&gt;
+        &lt;li&gt;First item&lt;/li&gt;
+        &lt;li&gt;Second item&lt;/li&gt;
+        &lt;li&gt;Third item&lt;/li&gt;
+    &lt;/ol&gt;
+</code></pre>
+
+        <p>Output of the code above: </p>
+        <ol>
+            <li>First item</li>
+            <li>Second item</li>
+            <li>Third item</li>
+        </ol>
+
+        <h5>Nested Lists</h5>
+        <p>
+            You can also create nested lists by placing one type of list inside another. 
+            For example, you can have an ordered list with unordered lists as its items, or vice versa.
+        </p>
+<pre class="code-block"><code>
+    &lt;ol&gt;
+    &lt;li&gt;Main point 1&lt;/li&gt;
+    &lt;li&gt;Main point 2
+        &lt;ul&gt;
+            &lt;li&gt;Subpoint 1&lt;/li&gt;
+            &lt;li&gt;Subpoint 2&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;Main point 3&lt;/li&gt;
+    &lt;/ol&gt;
+</code></pre>
+
+        <p>Output of the code above: </p>
+        <ol>
+            <li>Main point 1</li>
+            <li>Main point 2
+                <ul>
+                    <li>Subpoint 1</li>
+                    <li>Subpoint 2</li>
+                </ul>
+            </li>
+            <li>Main point 3</li>
+        </ol>
+
+    <h5>Image Tag &lt;img&gt;</h5>
+
+    <p>
+        The &lt;img&gt; tag in HTML is used to embed images into a webpage. It allows you to display images such as photographs, 
+        illustrations, icons, and logos on your web pages. Here's how you can use the &lt;img&gt; tag:
+    </p>
+<pre class="code-block"><code>
+    &lt;img src=&quot;image-source.jpg&quot; alt=&quot;Image Description&quot;&gt;
+</code></pre>
+        <ul>
+            <li><b>src:</b>
+                This attribute specifies the source URL of the image. It can be an absolute URL (e.g., https://www.example.com/image.jpg) or a relative URL (e.g., images/image.jpg), 
+            indicating the location of the image file.</li>
+        <li><b>alt:</b>
+                This attribute provides alternative text for the image. It's important for accessibility and search engine optimization. 
+            The text is displayed if the image cannot be loaded or for users with visual impairments.</li>
+        </ul>
+        <br>
+        <p>This is an example of embedding an image using the img tag.</p>
+<pre class="code-block"><code>
+    &lt;img src=&quot;image-example.jpg&quot; alt=&quot;A beautiful landscape&quot;&gt;    
+</code></pre>
+
+        <h5>&lt;strong&gt; Tag</h5>
+        <p>
+            The &lt;strong&gt; tag is used to indicate that its enclosed text should be given strong importance. By default, 
+            it often results in bold text, but its primary purpose is to convey semantic emphasis rather than just visual styling.
+        </p>
+<pre class="code-block"><code>
+    &lt;p&gt;This is a &lt;strong&gt;very important&lt;/strong&gt; point.&lt;/p&gt;
+</code></pre>
+        <h5>&lt;em&gt; Tag</h5>
+        <p>The &lt;em&gt; tag is used to emphasize text, typically resulting in italics. Like the &lt;strong&gt; tag, 
+            its primary purpose is to convey semantic emphasis.
+        </p>
+<pre class="code-block"><code>
+    &lt;p&gt;This sentence contains an &lt;em&gt;emphasized&lt;/em&gt; word.&lt;/p&gt;
+</code></pre>
+        <h5>&lt;br&gt; Tag</h5>
+        <p>
+            The &lt;br&gt; tag is used to insert a line break within text content. It doesn't have a closing tag, and
+             it's commonly used to force a new line within a paragraph or other inline elements.
+        </p>
+<pre class="code-block"><code>
+    &lt;p&gt;This is the first line.&lt;br&gt;
+    This is the second line.&lt;/p&gt;    
+</code></pre>
     </article>
     </main>
     <footer>
         <div class="footer-links">
             <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="mailto:yourname@example.com" class="icon"><i class="fas fa-envelope"></i></a></li>
+                <li><a href="https://github.com/yourusername" class="icon"><i class="fab fa-github"></i></a></li>
             </ul>
         </div>
-        <p>&copy; 2023 Your Documentation. All rights reserved.</p>
+        <p>&copy; 2023. All rights reserved.</p>
     </footer>
 </body>
 </html>
